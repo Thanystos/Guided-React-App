@@ -8,6 +8,7 @@ const Navbar = () => {
   const handleClick = () => setClick(!click)
   return (
     <>
+      {/* Ici le provider va offrir son paramètre à tous les enfants qu'il englobe et qui sont des Icon de react-icons */}
       <IconContext.Provider value={{color: '#fff'}}>
         <Nav>
             <NavbarContainer>
