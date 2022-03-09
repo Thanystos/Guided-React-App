@@ -19,6 +19,7 @@ const Navbar = () => {
   const [button, setButton] = useState(true)
 
   const handleClick = () => setClick(!click)
+  const closeMobileMenu = () => setClick(false)
 
   // ShowButton va modifier la valeur de button en fonction de la taille de l'écran
   const showButton = () => {
@@ -44,7 +45,7 @@ const Navbar = () => {
       <IconContext.Provider value={{color: '#fff'}}>
         <Nav>
           <NavbarContainer>
-            <NavLogo to="/">
+            <NavLogo to='/' onClick={closeMobileMenu}>
               <NavIcon />
                 ULTRA
             </NavLogo>

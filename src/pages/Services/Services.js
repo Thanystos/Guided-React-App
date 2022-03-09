@@ -1,14 +1,11 @@
 import React from 'react'
-import { homeObjFour, homeObjOne, homeObjThree, homeObjTwo } from './Data'
+import { homeObjFour } from './Data'
 import { InfoSection, Pricing } from '../../components'
 
 const Home = () => {
   return (
     <>
         {/* Notre pramètre est offer par Data */}
-        <InfoSection {...homeObjOne} />
-        <InfoSection {...homeObjTwo} />
-        <InfoSection {...homeObjThree} />
         <Pricing />
         <InfoSection {...homeObjFour} />
     </>
